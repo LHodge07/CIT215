@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>  What language was created to add interactivity to the Web? : <input class="question" type="text"></input> </label>
+    <script>
+
+        var txtQuestion = document.querySelector('.question');
+        txtQuestion.addEventListener('focusout',
+            (event) => { alert(txtQuestion.value) });
+        var library = prompt("Which library do you prefer? Options include Vue, React, or jQuery.");
+        alert(library);
+
+    </script>
+</body>
+</html>
