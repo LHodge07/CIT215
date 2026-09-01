@@ -1,0 +1,29 @@
+<!-- I used the console to verify my variable values -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <style>
+        h1 {text-align: center;}
+    </style>
+</head> <h1> The Tip Calculator</h1>
+<body>
+    <script>
+        var bill = Number(prompt("What is your bill?"));
+        var tax = bill * .07;
+        var bill2 = bill + tax;
+        var tip = bill2 * .15;
+        var final = bill2 + tip;
+
+        console.log("Bill: " + bill);
+        console.log("Tax: " + tax);
+        console.log("Bill after tax: " + bill2);
+        console.log("Tip: " + tip);
+        console.log("Final bill: " + final);
+        alert("Your grand total is... $" + final.toFixed(2));
+    </script>
+</body>
+</html>
