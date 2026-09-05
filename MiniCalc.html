@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let num1 = prompt("Enter the first number: ");
+        console.log(num1);
+        if (isNaN(num1)) {
+            alert("That is not a number!")
+            console.log("Wrong..")  }
+        
+        else {    
+            let op = prompt("Enter an operator: ")
+
+        // let answers = ["+", "-", "*", "/"]
+
+        console.log(op)
+
+        // I know || is a little more advanced, but it is efficient so I decided to use it
+        if (op == "+" || op == "-" || op == "*" || op == "/") {
+            alert("You followed directions.")
+            console.log("Well done.")
+             let num2 = prompt("Enter the second number: ");
+        console.log(num2);
+        if (isNaN(num2)) {
+            alert("That is not a number!")
+            console.log("Wrong..")  }
+        else {
+            let result;
+        if (op == "+") {
+            result = num1 + num2
+        }
+        else if (op == "-"){
+            result = num1 - num2
+        }
+        else if (op == "*"){
+            result = num1 * num2
+        }
+        else if (op == "/") {
+            result = num1 / num2
+        }
+
+        alert(result)
+        console.log(result)
+        }
+        
+        
+        }
+        else {
+            alert("That is not an operator!")
+            console.log("Wrong..")
+        } }
+       
+        
+    </script>
+</body>
+</html>
