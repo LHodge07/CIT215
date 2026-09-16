@@ -46,7 +46,7 @@ const updateTotals = (cost) => {
 
     let totalsArea = document.querySelector(".totalCost");
 
-    totalsArea.innerHTML = `This brings your Total to $${cost.toFixed(2)}`;     }
+    totalsArea.innerHTML = `This brings your Total to $${cost.toFixed(2)} Cash or Card?`;     }
 
 let totalCost = 0;
 totalCost = addPaintAndSupplies(totalCost, updateTotals);
