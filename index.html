@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Good Bones</title>
 </head>
 <body>
-    <label>  What language was created to add interactivity to the Web? : <input class="question" type="text"></input> </label>
-    <script>
+    <h1>Good Bones Mini Home Remodel</h1>
+    <h2>Remodel Costs</h2>
 
-        var txtQuestion = document.querySelector('.question');
-        txtQuestion.addEventListener('focusout',
-            (event) => { alert(txtQuestion.value) });
-        var library = prompt("Which library do you prefer? Options include Vue, React, or jQuery.");
-        alert(library);
-
-    </script>
+    <p class="paint">Paint $0.00</p>
+    <p class="floor">Floor Coverings $0.00</p>
+    <p class="furniture">Furniture $0.00</p>
+    <h2 class="totalCost">Total $0.00</h2>
+    <script src="script.js"></script>
 </body>
 </html>
