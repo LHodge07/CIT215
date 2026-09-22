@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authenticator</title>
+</head>
+<body>
+<script>
+    function creds(userId, password) {
+        if (userId == "admin" && password == "secret") {
+            return "Welcome admin!... You are the admin, right?";
+        } else {
+            return "BAD LOGIN CREDENTIALS";
+        }
+    }
+
+    let userId = prompt("Enter username:");
+    let password = prompt("Enter password:");
+
+    let result = creds(userId, password);
+
+    console.log(result);
+    document.write(result);
+</script>
+
+</body>
+</html>
