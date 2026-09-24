@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Assignment</title>
+</head>
+<body>
+
+<div class="t1Output"></div>
+
+<div class="t2Output"></div>
+
+<div class="t4Output"></div>
+
+<div class="t5Output"></div>
+
+<div class="t6Output"></div>
+<div class="t62Output"></div>
+<div class="t63Output"></div>
+
+<script>
+    // Task1
+
+    let num = prompt("Enter a number:");
+    let output1 = document.querySelector(".t1Output");
+    output1.innerHTML = "Quantity: " + num;
+    let percentage = prompt("Enter a percentage:");
+    let result = num * (percentage / 100);
+    output1.innerHTML += `<p>${percentage}% of Quantity, ${num}, is ${result}</p>`;
+
+
+    // Task 2.A
+
+    let grade = Number(prompt("Enter a grade between 1 and 100:"));
+    let output2 = document.querySelector(".t2Output");
+
+    let ifGrade;
+
+    if (grade >= 91) {
+        ifGrade = "A";
+    } else if (grade >= 81) {
+        ifGrade = "B";
+    } else if (grade >= 71) {
+        ifGrade = "C";
+    } else if (grade >= 61) {
+        ifGrade = "D";
+    } else {
+        ifGrade = "F";
+    }
+
+    output2.innerHTML = "(a) Your letter grade is " + ifGrade;
+
+
+    // Task 2.B
+
+    let switchGrade;
+
+    switch (true) {
+        case grade >= 91:
+            switchGrade = "A";
+            break;
+        case grade >= 81:
+            switchGrade = "B";
+            break;
+        case grade >= 71:
+            switchGrade = "C";
+            break;
+        case grade >= 61:
+            switchGrade = "D";
+            break;
+        default:
+            switchGrade = "F";
+    }
+
+    output2.innerHTML += `<p>(b) Your letter grade is ${switchGrade}</p>`;
+
+    // Task #3
+
+        let prof = prompt("Enter the professor's name:");
+
+    let line = prompt("Enter the line to write:");
+
+    let times = Number(prompt("How many times should the line be written?"));
+    for (let i = 1; i <= times; i++) {
+        console.log(i + ": " + line);
+}
+
+    // Task #4
+    let professor = prompt("Enter the professor's name:");
+    let newLine = prompt("Enter the line to write:");
+    let newTimes = Number(prompt("How many times should the line be written?"));
+    let newOutput = document.querySelector(".t4Output");
+
+    let count4 = 1;
+
+    while (count4 <= newTimes) {
+        newOutput.innerHTML += count4 + ": " + newLine + "<br>";
+        count4++;
+}
+    
+    // Task 5
+
+const lines = () => {
+
+   
+    let professor = prompt("Enter the professor's name:");
+    let line = prompt("Enter the line to write:");
+    let times = Number(prompt("How many times should the line be written:"));
+    let output = document.querySelector(".t5Output");
+    let count = 1;
+
+    while (count <= times) {
+        output.innerHTML += count + ": " + line + "<br>";
+        count++;
+    }
+};
+
+    lines();
+
+    // Task #6.1
+
+let output6_1 = document.querySelector(".t6Output");
+
+for (let factor1 = 1; factor1 <= 12; factor1++) {
+
+    for (let factor2 = 1; factor2 <= 12; factor2++) {
+        output6_1.innerHTML += factor1 + " x " + factor2 + " = " + (factor1 * factor2) + "<br>";
+    }
+
+    output6_1.innerHTML += "<br>";
+}
+
+// Task 6.2
+
+    let output6_2 = document.querySelector(".t62utput2");
+
+    const createTables = (factor1) => {
+
+    for (let factor2 = 1; factor2 <= 12; factor2++) {
+        output6_2.innerHTML += factor1 + " x " + factor2 + " = " + (factor1 * factor2) + "<br>";
+    }
+
+    output6_2.innerHTML += "<br>";
+};
+
+    for (let factor1 = 1; factor1 <= 12; factor1++) {
+    createTables(factor1);
+    }
+
+
+// Task 6.3
+
+    let output6_3 = document.querySelector(".t63Output3");
+
+const createTables2 = (factor, delimiter) => {
+
+    for (let factor2 = 1; factor2 <= delimiter; factor2++) {
+        output6_3.innerHTML += factor + " x " + factor2 + " = " + (factor * factor2) + "<br>";
+    }
+
+    output6_3.innerHTML += "<br>";
+};
+
+
+    const allTables = (delimiter) => {
+
+    for (let factor = 1; factor <= 12; factor++) {
+        createTables2(factor, delimiter);
+    }
+};
+
+allTables(12);
+
+
+/*
+Task #7: Hoisting
+Function hoisting means a function declaration can be used before the function is written.
+Variable hoisting means a variable declaration is moved tothe top, but the value is not assigned yet.
+*/
+
+sayHello();
+
+function sayHello() {
+    console.log("Hello!");
+}
+
+/*
+Variable example:
+The variable is declared with var, so the declaration ishoisted. \
+The value is undefined until it is assigned.
+*/
+
+console.log(myName);
+
+var myName = "Harry";
+
+
+/*
+ECMAScript changed this with let and const. Variables using let and const cannot be used before 
+they are declared. This helps prevent problems with
+variable hoisting.
+*/
+
+</script>
+
+
+</body>
+</html>
