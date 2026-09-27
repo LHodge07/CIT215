@@ -27,13 +27,13 @@ let output = document.querySelector(".output");
 
 output.textContent =
     "Movie: " + movie.title +
-    "\nYear: " + movie.year +
-    "\nActress: " + movie.actressLead +
-    "\nActor: " + movie.actorLead +
-    "\nGenre: " + movie.genre +
-    "\nAcademy Awards: " + movie.academyAwards +
-    "\nMost famous quote: " + movie.quote +
-    "\nLeading actor: " + movie.leadingRole("actorLead") +
-    "\nLeading actress: " + movie.leadingRole("actressLead") +
+    "\n | Year: " + movie.year +
+    "\n | Actress: " + movie.actressLead +
+    "\n | Actor: " + movie.actorLead +
+    "\n | Genre: " + movie.genre +
+    "\n | Academy Awards: " + movie.academyAwards +
+    "\n | Most famous quote: " + movie.quote +
+    "\n | Leading actor: " + movie.leadingRole("actorLead") +
+    "\n | Leading actress: " + movie.leadingRole("actressLead") +
     "\n" + movie.formatInfo() +
-    "\nProfits the year of release: " + movie.profits.yearOfRelease;
+    "\n | Profits the year of release: " + movie.profits.yearOfRelease;
