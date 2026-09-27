@@ -26,7 +26,7 @@ movie.profits = {
 let output = document.querySelector(".output");
 
 output.textContent =
-    "Movie: " + movie.title +
+    "   | Movie: " + movie.title +
     "\n | Year: " + movie.year +
     "\n | Actress: " + movie.actressLead +
     "\n | Actor: " + movie.actorLead +
