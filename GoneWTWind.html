@@ -1,51 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gone With the Wind</title>
 </head>
+
 <body>
-    <script>
-        const movie = {
-    title: "Gone With the Wind",
-    year: 1939,
-    actressLead: "Vivien Leigh",
-    actorLead: "Clark Gable",
-    genre: "Epic",
-    academyAwards: 8,
 
-    leadingRole: function(actor) {
-        return this[actor];
-    },
+    <pre class="output"></pre>
+    <script src="GoneWTWind.js"></script>
 
-    formatInfo: function() {
-        return `${this.title} was released in ${this.year}.`;
-    },
-
-    quote: "Frankly My Dear, I don't give a damn"
-};
-console.log(movie);
-
-console.log("Most famous quote from the movie: " + movie.quote);
-
-let role = movie.leadingRole("actorLead");
-console.log(role);
-
-console.log("Leading role, " + movie.leadingRole("actressLead"));
-
-let roleWithMostVotes = "actorLead";
-
-console.log("Role with most votes is " +
-    movie.leadingRole(roleWithMostVotes));
-
-    movie.profits = {
-    yearOfRelease: 10,
-    subsequentToDate: 40
-};
-console.log("profits the year of release: " +
-    movie.profits.yearOfRelease);
-    
-    </script>
 </body>
+
 </html>
