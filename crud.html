@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Bowl Champions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Super Bowl Champions</header>
+
+    <div class="wrapper">
+        <div class="box list-box">
+            <h3>Current List Of Champions</h3>
+            <ul class="list-all"></ul>
+        </div>
+
+        <div class="box menu-box">
+            <h3>What would you like to do?</h3>
+            <ul>
+                <li>Create a champion - C</li>
+                <li>Read the details for a champion - R</li>
+                <li>Update the details for a champion - U</li>
+                <li>Delete a champion - D</li>
+            </ul>
+            <input type="text" id="choice" maxlength="1" size="3">
+            <button onclick="act()">Submit your choice of action</button>
+        </div>
+
+        <div class="box details-box">
+            <h3>Details</h3>
+            <p class="details-info">Choose an action to see details here.</p>
+        </div>
+        <div class="logo">
+      <img src="nfl-logo.png" alt="NFL logo">
+                    </div>
+    </div>
+
+    <script src="crud.js"></script>
+</body>
+</html>
